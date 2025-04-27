@@ -1,0 +1,36 @@
+openapi: 3.0.1
+info:
+  title: Entrega Final Backend III
+  description: API para gestionar productos, carritos, usuarios y mascotas.
+  version: "1.0.0"
+
+servers:
+  - url: http://localhost:8080
+
+paths:
+  /api/products:
+    get:
+      summary: Obtener todos los productos
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Lista de productos obtenida correctamente
+
+  /api/carts:
+    get:
+      summary: Obtener todos los carritos
+      tags:
+        - Carts
+      responses:
+        "200":
+          description: Lista de carritos obtenida correctamente
+
+  /api/mocks/mockingusers:
+    get:
+      summary: Generar usuarios de prueba
+      tags:
+        - Mocks
+      responses:
+        "200":
+          description: Usuarios generados correctamente
